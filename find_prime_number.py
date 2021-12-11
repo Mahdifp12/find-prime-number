@@ -1,8 +1,10 @@
-def prime_number(num):
+user_num = int(input("Enter your number: "))
+
+def is_prime(num):
     for i in range(2, num):
         if num % i == 0:
-            return "is not prime"
+            return False
 
-    return 'is prime'
-    
-print(prime_number(3))
+    return True
+
+print(is_prime(user_num))
